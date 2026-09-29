@@ -305,7 +305,7 @@ def lucky_section(playlists):
 
     if st.button("Feeling lucky"):
         pick = lucky_pick(playlists, mode=mode)
-        if pick is None:
+        if pick == "Hype":
             st.warning("No songs available for this mode.")
             return
 
